@@ -1,0 +1,32 @@
+/* Custom styles for horizontal scroll */
+.d-flex {
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .card {
+    scroll-snap-align: start;
+  }
+  
+  .page-item .page-link {
+    background-color: #28a745;
+    color: white;
+    border: 1px solid #28a745;
+  }
+  
+  .page-item .page-link:hover {
+    background-color: #218838;
+    color: white;
+  }
+  
+  .page-item.active .page-link {
+    background-color: #218838;
+    border: 1px solid #218838;
+  }
+  
+  .page-item.disabled .page-link {
+    background-color: #e0e0e0;
+    color: #ccc;
+  }
+  

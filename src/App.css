@@ -1,0 +1,825 @@
+/* .home{
+  color: white;
+  margin: 10px;
+  padding: 10px;
+}
+.a{
+  color: bisque;
+}
+.veg{
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  
+}
+/* .div1{
+  background-color:#888;
+  width: 1000px;
+  
+} */
+.nonveg{
+  color: white;
+  margin: 10px;
+  padding: 10px;
+}
+.cart{
+  color: white;
+  margin: 10px;
+  padding: 10px;
+}
+.orders{
+  color: white;
+  margin: 10px;
+  padding: 10px;
+}
+.aboutus{
+  color: white;
+  margin: 10px;
+  padding: 10px;
+}
+.contactus{
+  color: white;
+  margin: 10px;
+  padding: 10px;
+}
+.milk{
+  color: white;
+  margin: 10px;
+  padding: 10px;
+}
+.navbar{
+  background-color: black;
+  padding: 10px; 
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.but1{
+color: green;
+}
+
+
+/* home */
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Featured Products Section */
+section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.product-gallery {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.product {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product h3 {
+  font-size: 1.5em;
+  margin-top: 15px;
+  color: #333;
+}
+
+.product p {
+  font-size: 1em;
+  color: #555;
+  margin-top: 10px;
+}
+
+.product button {
+  background-color: #5cb85c;
+  border: none;
+  padding: 10px;
+  margin-top: 15px;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.product button:hover {
+  background-color: #4cae4c;
+}
+
+/* Special Offers Section */
+.offers {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.offer {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.offer h3 {
+  font-size: 1.8em;
+  color: #d9534f;
+}
+
+.offer p {
+  font-size: 1.2em;
+  color: #555;
+  margin-top: 15px;
+}
+
+.offer button {
+  background-color: #d9534f;
+  border: none;
+  padding: 10px;
+  margin-top: 15px;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.offer button:hover {
+  background-color: #c9302c;
+}
+
+/* About Us Section */
+section p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+  text-align: center;
+  margin-top: 20px;
+}
+
+section button {
+  background-color: #0275d8;
+  border: none;
+  padding: 12px 20px;
+  margin-top: 20px;
+  color: white;
+  font-size: 1.1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+section button:hover {
+  background-color: #025aa5;
+}
+
+/* Customer Reviews Section */
+.reviews {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.review {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.review p {
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+
+/* Newsletter Section */
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+input[type="email"] {
+  padding: 10px;
+  font-size: 1.1em;
+  width: 300px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+button[type="submit"] {
+  padding: 12px 20px;
+  font-size: 1.1em;
+  background-color: #5bc0de;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #31b0d5;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer p {
+  font-size: 1em;
+  color: #555;
+}
+
+.social-media {
+  margin-top: 20px;
+}
+
+.social-media a {
+  font-size: 1.2em;
+  color: #333;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.social-media a:hover {
+  color: #0275d8;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  .product-gallery, .offers {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product, .offer {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .product button, .offer button, section button, button[type="submit"] {
+    width: 100%;
+    padding: 14px;
+  }
+
+  .social-media a {
+    font-size: 1.5em;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+}
+/* Header */
+header {
+  text-align: center;
+  margin-top: 100px; /* Adds space from the top of the page */
+  margin-bottom: 40px; /* Space below the header */
+}
+
+header h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #555;
+  margin-top: 10px;
+}
+
+/*aboutus*/
+
+/* General Layout for the Page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main container */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 40px 0;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+header p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+/* Section Styling */
+section {
+  margin-bottom: 40px;
+}
+
+/* Section Headings */
+h2 {
+  font-size: 2.2em;
+  color: #333;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 5px;
+}
+
+/* Paragraphs in Sections */
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Unordered Lists */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Blockquote (for testimonials) */
+blockquote {
+  background-color: #f9f9f9;
+  border-left: 5px solid #4CAF50;
+  padding: 15px 20px;
+  font-style: italic;
+  color: #555;
+  margin: 20px 0;
+}
+
+/* FAQ (definition list) */
+dl {
+  margin: 0;
+  padding: 0;
+}
+
+dt {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+dd {
+  margin-left: 20px;
+  font-size: 1.1em;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1.1em;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.5em;
+  }
+
+  header p {
+    font-size: 1.1em;
+  }
+
+  section {
+    padding: 0 10px;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  ul li {
+    font-size: 1em;
+  }
+
+  blockquote {
+    font-size: 1.1em;
+  }
+
+  footer p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+
+  section {
+    padding: 0 5px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  ul li {
+    font-size: 0.95em;
+  }
+
+  blockquote {
+    font-size: 1em;
+  }
+
+  footer p {
+    
+    font-size: 0.95em;
+  }
+}
+
+
+/* VegItems.css */
+
+/* Container for the veg items */
+.veg-items-container {
+  margin: 50px auto;
+  width: 80%;
+  text-align: center;
+}
+
+/* Title */
+.title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* Container for the cards */
+.card-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 20px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Each card */
+.card {
+  width: 15rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  scroll-snap-align: start;
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Card body */
+.card-body {
+  padding: 10px;
+}
+
+/* Card title */
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Card price */
+.card-price {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Button to add to cart */
+.btn-add-to-cart {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-add-to-cart:hover {
+  background-color: #218838;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.page-btn {
+  background-color: #f8f9fa;
+  color: #007bff;
+  border: 1px solid #ddd;
+  padding: 8px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.page-btn:hover {
+  background-color: #e2e6ea;
+}
+
+.page-btn.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.page-btn:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+/* App.css */
+
+/* Container for the veg items */
+.veg-items-container {
+  margin: 50px auto;
+  width: 80%;
+  text-align: center;
+}
+
+/* Title */
+.title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* Search Bar */
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Container for the cards */
+.card-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 20px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Each card */
+.card {
+  width: 15rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  scroll-snap-align: start;
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Card body */
+.card-body {
+  padding: 10px;
+}
+
+/* Card title */
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Card price */
+.card-price {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Button to add to cart */
+.btn-add-to-cart {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-add-to-cart:hover {
+  background-color: #218838;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.page-btn {
+  background-color: #f8f9fa;
+  color: #007bff;
+  border: 1px solid #ddd;
+  padding: 8px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.page-btn:hover {
+  background-color: #e2e6ea;
+}
+
+.page-btn.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.page-btn:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+.milk-items-container {
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 8px;
+  width: 300px;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+}
+
+.card-price {
+  font-size: 1.1rem;
+  color: green;
+}
+
+.page-btn {
+  padding: 8px 12px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.page-btn.active {
+  background-color: #007BFF;
+  color: white;
+}
+
+.page-btn:disabled {
+  cursor: not-allowed;
+  background-color: #ccc;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
