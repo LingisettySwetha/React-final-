@@ -69,7 +69,7 @@ function VegItems() {
 
   return (
     <div className="veg-items-container">
-      <h1 className="title">Veg Items</h1>
+      <h1 className="title">Veg Itemss</h1>
 
       {/* Search Bar */}
       <div className="search-bar">
